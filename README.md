@@ -11,9 +11,11 @@
  `cd ${JSON_FILE_DIRECTORY}`
  
  1. Verify a json file with docker-jsonlint:
+
  `sudo docker run -it --rm --name jsonlint -v `pwd`:/src/ jsonlint jsonlint JSON_A.json`
 
  1. json diff with two json with jsondiffpatch:
+
  `sudo docker run -it --rm --name jsonlint -v `pwd`:/src/ jsonlint jsondiffpatch JSON_A.json JSON_B.json | less`
 
 # Referenace
