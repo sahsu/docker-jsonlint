@@ -1,20 +1,11 @@
-FROM node:0.12.3-slim
+#FROM nano/node.js
+FROM alpine
+
 MAINTAINER sahsu.mobi@gmail.com
 
-### Setup User ###
-ENV user lint_trap
-ENV group linters
-ENV homedir /src/
+#ADD ./jsonlint-master /jsonlnit-master
+#CMD ["/usr/bin/node","/jsonlint-master/lib/cli.js"]
+RUN apk add --update nodejs && \
+      rm /var/cache/apk/*
+RUN npm install -g jsonlint && npm install -g jsondiffpatch
 
-RUN mkdir -p $homedir \
-       && groupadd -r $group -g 777 \
-        && useradd -u 666 -r -g $group -d $homedir -s /sbin/nologin -c "Docker image user" $user \
-         && chown -R $user:$group $homedir
-
-### Setup Linter ###
-         RUN npm install -g jsonlint
-         RUN npm install -g jsondiffpatch
-
-### Defaults ###
-         USER $user
-         WORKDIR $homedir
