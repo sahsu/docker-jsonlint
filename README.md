@@ -25,3 +25,7 @@
  1. json diff with two json with jsondiffpatch:
 
  `sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsondiffpatch JSON_A.json JSON_B.json | less`
+
+ 1. json minify:
+ 
+ `sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsonlint json-minify JSON_A.json`
