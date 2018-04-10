@@ -13,6 +13,12 @@
  `docker run -it --rm --name jsonlint -v "${DEST_JSON_DIRECTORY}:/src/" sahsu/jsonlint {jsonlint | jsondiffpatch } ${JSON_FILE}`
 
 # Example
+ 1. if you using zsh, you can do ( hopefully helps
+ ```
+ jd () {
+        sudo docker run -t --rm -v `pwd`:/src sahsu/docker-jsonlint jsondiffpatch /src/$1 /src/$2
+}
+```
 
  1. go to the json file directory:
 
