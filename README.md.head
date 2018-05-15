@@ -1,5 +1,14 @@
 # Intro
- Dockerfile for jsonlint / jsondiffpatch automation build
+ Docker image for:
+ 1. jsonlint
+ 1. jsondiffpatch
+ 1. prettyjson
+ 1. json-minify
+ 1. html-validator-cli
+ 1. cli-stopwatch
+
+# auto update
+ We now support automaticlly update each npm packages, check diary and will put CHANGELOG in top. 
 
 # Usage
  1. pull image first:
