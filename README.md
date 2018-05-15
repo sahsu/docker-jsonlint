@@ -35,3 +35,6 @@
  1. json minify:
  
  `sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsonlint json-minify JSON_A.json`
+
+
+# Changelog
