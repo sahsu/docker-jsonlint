@@ -43,3 +43,9 @@
  
  `sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsonlint json-minify JSON_A.json`
 
+ 1. yaml-lint
+
+ ```
+ docker run -v `pwd`:/src/ --rm json yamllint /src/q.yaml
+ ```
+ you should see `✔ YAML Lint successful.` otherwise you will see which section is fail.

@@ -1,0 +1,9 @@
+swarm:
+  common-file-upload-rpc:
+    image: softleader.com.tw:5000/softleader-common-file-upload-rpc:${TAG}
+    volumes:
+      - /tmp/uploaded:/uploaded
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
