@@ -51,7 +51,9 @@
 
  1. go to the json file directory:
 
- ```cd ${JSON_FILE_DIRECTORY}```
+ ```
+ cd ${JSON_FILE_DIRECTORY}
+ ```
  
  1. Verify a json file with docker-jsonlint:
 
