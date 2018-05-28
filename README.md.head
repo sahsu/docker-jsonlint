@@ -12,17 +12,17 @@
  We now support automaticlly update each npm packages, check diary and will put CHANGELOG in top. 
 
 # Usage
- 1. pull image first:
+1. pull image first:
 
- ```
- docker pull sahsu/jsonlint
- ```
+  ```
+  docker pull sahsu/jsonlint
+  ```
 
- 1. run it with:
+1. run it with:
 
- ```
- docker run -it --rm --name jsonlint -v "${DEST_JSON_DIRECTORY}:/src/" sahsu/jsonlint {jsonlint | jsondiffpatch } ${JSON_FILE}
- ```
+  ```
+  docker run -it --rm --name jsonlint -v "${DEST_JSON_DIRECTORY}:/src/" sahsu/jsonlint {jsonlint | jsondiffpatch } ${JSON_FILE}
+  ```
 
 # Example
  1. if you using zsh, you can do ( hopefully helps
