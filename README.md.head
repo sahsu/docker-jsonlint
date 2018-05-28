@@ -6,6 +6,7 @@
  1. json-minify
  1. html-validator-cli
  1. cli-stopwatch
+ 1. yaml-lint
 
 # auto update
  We now support automaticlly update each npm packages, check diary and will put CHANGELOG in top. 
