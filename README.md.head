@@ -22,40 +22,33 @@
    ```
 
 # Example
- 1. if you using zsh, you can do ( hopefully helps
- ```
- jd () {
-        sudo docker run -t --rm -v `pwd`:/src sahsu/docker-jsonlint jsondiffpatch /src/$1 /src/$2
-}
+1. if you using zsh, you can do ( hopefully helps
+```
+jd () {
+       sudo docker run -t --rm -v `pwd`:/src sahsu/docker-jsonlint jsondiffpatch /src/$1 /src/$2
+       }
 ```
 
- 1. go to the json file directory:
+1. go to the json file directory:
+```
+cd ${JSON_FILE_DIRECTORY}
+```
+1. Verify a json file with docker-jsonlint:
+```
+sudo docker run --rm --name jsonlint -v `pwd`:/src/ sahsu/docker-jsonlint jsonlint JSON_A.json
+```
+1. json diff with two json with jsondiffpatch:
+```
+sudo docker run --rm --name jsonlint -v `pwd`:/src/ sahsu/docker-jsonlint jsondiffpatch JSON_A.json JSON_B.json | less
+```
 
- ```
- cd ${JSON_FILE_DIRECTORY}
- ```
- 
- 1. Verify a json file with docker-jsonlint:
+1. json minify:
+```
+sudo docker run --rm --name jsonlint -v `pwd`:/src/ sahsu/docker-jsonlint json-minify JSON_A.json
+```
 
- ```
- sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsonlint jsonlint JSON_A.json
- ```
-
- 1. json diff with two json with jsondiffpatch:
-
- ```
- sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsondiffpatch JSON_A.json JSON_B.json | less
- ```
-
- 1. json minify:
- 
- ```
- sudo docker run --rm --name jsonlint -v `pwd`:/src/ jsonlint json-minify JSON_A.json
- ```
-
- 1. yaml-lint
-
- ```
- docker run -v `pwd`:/src/ --rm json yamllint /src/q.yaml
- ```
- you should see `✔ YAML Lint successful.` otherwise you will see which section is fail.
+1. yaml-lint
+```
+docker run -v `pwd`:/src/ --rm sahsu/docker-jsonlint yamllint /src/q.yaml
+```
+you should see `✔ YAML Lint successful.` otherwise you will see which section is fail.
