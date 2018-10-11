@@ -1,5 +1,8 @@
 # Change Log
 
+## [html-validator-cli-4.1.3](https://github.com/sahsu/docker-jsonlint/tree/html-validator-cli-4.1.3) (2018-10-11)
+[Full Changelog](https://github.com/sahsu/docker-jsonlint/compare/html-validator-cli-4.1.1...html-validator-cli-4.1.3)
+
 ## [html-validator-cli-4.1.1](https://github.com/sahsu/docker-jsonlint/tree/html-validator-cli-4.1.1) (2018-10-02)
 [Full Changelog](https://github.com/sahsu/docker-jsonlint/compare/yaml-lint-1.2.4...html-validator-cli-4.1.1)
 
