@@ -1,5 +1,8 @@
 # Change Log
 
+## [html-validator-cli-6.0.0](https://github.com/sahsu/docker-jsonlint/tree/html-validator-cli-6.0.0) (2019-04-16)
+[Full Changelog](https://github.com/sahsu/docker-jsonlint/compare/html-validator-cli-5.0.0...html-validator-cli-6.0.0)
+
 ## [html-validator-cli-5.0.0](https://github.com/sahsu/docker-jsonlint/tree/html-validator-cli-5.0.0) (2019-02-22)
 [Full Changelog](https://github.com/sahsu/docker-jsonlint/compare/html-validator-cli-4.1.4...html-validator-cli-5.0.0)
 
