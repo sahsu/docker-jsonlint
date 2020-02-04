@@ -4,6 +4,7 @@ services:
 before_install:
   - docker build . -t docker-jsonlint | grep ^\+ | awk '{print $NF}' > /tmp/docker-jsonlint.latest
   - cat /tmp/docker-jsonlint.latest
+  - gem install github_changelog_generator
 branches:
   only:
     - master # build master branch only
